@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TrashToTreasure</string>
+        <string name="activity_email">Email</string>
+        <string name="activity_passw">Password</string>
+        <string name="newuser">Not a registered user?</string>
+        <string name="register_link">SignUp</string>
+
+        <string name="activity_register_fname">First Name</string>
+        <string name="activity_register_lname">Last Name</string>
+        <string name="activity_register_phone">Phone Number</string>
+
+        <string name="registereduser">Registered Already?</string>
+        <string name="login_link">SignIn</string>
+
+        <string name="activity_signup_btn">Register</string>
+        <string name="activity_login_btn">SignIn</string>
+
+</resources>

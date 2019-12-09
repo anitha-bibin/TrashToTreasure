@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="itemcat">
+        <item name="item1">Car Seat</item>
+        <item name="item2">Books</item>
+        <item name="item3">Highchair</item>
+        <item name="item4">Sterilizer</item>
+        <item name="item5">Costumes</item>
+        <item name="item6">Monitor</item>
+        <item name="item7">Bean Bag</item>
+        <item name="item8">Cradle</item>
+        <item name="item10">Walker</item>
+    </array>
+    <array name="itemcondition">
+        <item name="">New</item>
+        <item name="">BrandNew</item>
+        <item name="">Used</item>
+        <item name="">Heavily Used</item>
+    </array>
+</resources>
