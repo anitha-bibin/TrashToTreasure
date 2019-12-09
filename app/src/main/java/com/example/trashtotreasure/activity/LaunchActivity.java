@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.strictmode.CredentialProtectedWhileLockedViolation;
 import android.text.Layout;
 import android.view.View;
+import android.widget.ArrayAdapter;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

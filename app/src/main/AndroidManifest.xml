@@ -18,12 +18,11 @@
         <!-- Login activity  -->
         <activity android:name=".activity.LoginActivity">
 
-
         </activity>
 
         <!-- Register activity  -->
 
-        <activity android:name="RegisterActivity" />
+        <activity android:name=".activity.RegisterActivity" />
 
         <!-- Donate items details activity  -->
 
@@ -36,19 +35,19 @@
 
         <!-- preview of the item  i want to donate activity  -->
 
-        <activity android:name="PreviewActivity" />
+        <activity android:name=".activity.PreviewItemActivity" />
 
         <!-- view of the item i want to treasure  -->
 
-        <activity android:name="TreasureItActivity" />
+        <activity android:name=".activity.TreasureItActivity" />
 
         <!-- view of all the items i listed for donating  -->
 
-        <activity android:name="MyItemsActivity" />
+        <activity android:name=".activity.MyItemsActivity" />
 
         <!-- my account activity  -->
 
-        <activity android:name="MyAccountActivity" />
+        <activity android:name=".activity.MyAccountActivity" />
 
     </application>
 </manifest>

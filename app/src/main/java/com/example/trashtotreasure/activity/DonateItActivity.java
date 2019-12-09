@@ -80,8 +80,6 @@ public class DonateItActivity extends AppCompatActivity {
             imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
 
         }
-
-
     }
 
     public void homeClick(View view) {
