@@ -1,113 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/greencolor"
     android:orientation="vertical"
-    android:layout_margin="20dp"
-    android:scrollbars="vertical">
+    >
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp" android:orientation="horizontal" >
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/index"
-            android:clickable="true"
-            android:onClick="homeClick"/>
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="100dp"
             android:text="Register"
             android:textSize="25sp" />
-    </RelativeLayout>
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_register_fname" />
-
-    <EditText
-        android:id="@+id/etregfname"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_register_lname" />
-
-    <EditText
-        android:id="@+id/etreglname"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_register_phone" />
-
-    <!--phone number entered should be number type and maxlength 10 -->
-
-    <EditText
-        android:id="@+id/etregphone"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="numberDecimal"
-        android:maxLength="10" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_email" />
-
-    <EditText
-        android:id="@+id/etregemail"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="textEmailAddress" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_passw" />
-
-    <EditText
-        android:id="@+id/etregpass"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="textPassword" />
-
-    <Button
-        android:id="@+id/btn_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:text="@string/activity_signup_btn" />
-    <!-- layout inside layout. To show/arrange the text or items in one line -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_register_fname" />
+
+        <EditText
+            android:id="@+id/etregfname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_register_lname" />
+
+        <EditText
+            android:id="@+id/etreglname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_register_phone" />
+
+        <!--phone number entered should be number type and maxlength 10 -->
+
+        <EditText
+            android:id="@+id/etregphone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal"
+            android:maxLength="10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_email" />
+
+        <EditText
+            android:id="@+id/etregemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_passw" />
+
+        <EditText
+            android:id="@+id/etregpass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
-            android:text="@string/registereduser" />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:paddingBottom="15dp"
+            android:text="@string/activity_signup_btn" />
+        <!-- layout inside layout. To show/arrange the text or items in one line -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:clickable="true"
-            android:onClick="signInLinkClick"
-            android:text="@string/login_link"
-            android:textColor="@color/colorAccent"
-            android:textStyle="italic" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="@string/registereduser" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:onClick="signInLinkClick"
+                android:text="@string/login_link"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic" />
+        </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

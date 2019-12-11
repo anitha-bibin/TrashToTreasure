@@ -9,33 +9,44 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".activity.SplashActivity">
 
+        </activity>
 
         <!-- activity for login page -->
         <activity android:name=".activity.LaunchActivity">
 
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!-- Login activity  -->
-        <activity android:name=".activity.LoginActivity">
+        <activity android:name=".activity.LoginActivity"
+            android:parentActivityName=".activity.LaunchActivity">
 
         </activity>
 
         <!-- Register activity  -->
 
-        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.RegisterActivity"
+                   android:parentActivityName=".activity.LaunchActivity">
+
+        </activity>>
 
         <!-- Donate items details activity  -->
 
-        <activity android:name=".activity.DonateItActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".activity.DonateItActivity"
+            android:parentActivityName=".activity.LaunchActivity" >
+
         </activity>
 
         <!-- preview of the item  i want to donate activity  -->
 
-        <activity android:name=".activity.PreviewItemActivity" />
+        <activity android:name=".activity.PreviewItemActivity"
+            android:parentActivityName=".activity.LaunchActivity"/>
 
         <!-- view of the item i want to treasure  -->
 

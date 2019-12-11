@@ -5,42 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/greencolor"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp" android:orientation="horizontal" >
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/index"
-                android:clickable="true"
-                android:onClick="homeClick"/>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="@string/registereduser" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:onClick="signInLinkClick"
+                android:text="@string/login_link"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic" />
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:onClick="donateLinkClick"
+                android:text=" Donate here!!!"
+                android:textColor="@color/splashcolor"
+                android:textStyle="italic"
+                    android:textSize="20sp"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp" android:orientation="vertical" >
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:paddingLeft="100dp"
-                android:text="Launch Activity"
+                android:text="Available Items"
                 android:textSize="25sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <!--Divider code in ListView-->
-            <ListView
-                android:id="@+id/simpleListView"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:divider="#f00"
-                android:dividerHeight="1dp"
-                />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp" >
+        <GridView
+            android:numColumns="3"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/gridlist"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#e5e5e5"
+            android:padding="5dp"
+            android:clickable="true"
+            />
         </RelativeLayout>
 
     </LinearLayout>
+
 </RelativeLayout>
 
