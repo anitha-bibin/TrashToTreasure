@@ -11,17 +11,13 @@
 
         <activity android:name=".activity.SplashActivity">
 
+
         </activity>
 
         <!-- activity for login page -->
         <activity android:name=".activity.LaunchActivity">
 
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- Login activity  -->
         <activity android:name=".activity.LoginActivity"
@@ -34,7 +30,7 @@
         <activity android:name=".activity.RegisterActivity"
                    android:parentActivityName=".activity.LaunchActivity">
 
-        </activity>>
+        </activity>
 
         <!-- Donate items details activity  -->
 
@@ -43,7 +39,7 @@
 
         </activity>
 
-        <!-- preview of the item  i want to donate activity  -->
+        <!-- preview of the item when you click on it -->
 
         <activity android:name=".activity.PreviewItemActivity"
             android:parentActivityName=".activity.LaunchActivity"/>
@@ -52,13 +48,16 @@
 
         <activity android:name=".activity.TreasureItActivity" />
 
-        <!-- view of all the items i listed for donating  -->
+               <!-- my account activity  -->
 
-        <activity android:name=".activity.MyItemsActivity" />
+        <activity android:name=".activity.MyAccountActivity"
+            android:parentActivityName=".activity.LaunchActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <!-- my account activity  -->
-
-        <activity android:name=".activity.MyAccountActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
 </manifest>

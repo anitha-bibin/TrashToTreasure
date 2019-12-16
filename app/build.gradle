@@ -33,4 +33,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson
     implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
 
+    // https://mvnrepository.com/artifact/com.google.android.material/material/1.0.0-alpha1
+    //for floating button
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+
 }

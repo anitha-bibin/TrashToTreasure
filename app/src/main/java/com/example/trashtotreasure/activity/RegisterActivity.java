@@ -29,8 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         Button btnRegister = findViewById(R.id.btn_register);
 
-        final EditText etRegFname = findViewById(R.id.etregfname);
-        final EditText etRegLname = findViewById(R.id.etreglname);
+        final EditText etRegUname = findViewById(R.id.etreguname);
         final EditText etRegPhone = findViewById(R.id.etregphone);
         final EditText etRegEmail = findViewById(R.id.etregemail);
         final EditText etRegPass = findViewById(R.id.etregpass);
@@ -39,9 +38,8 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String userfname = etRegFname.getText().toString();
+                String username = etRegUname.getText().toString();
                 //   getText() returns "editable" type value. tostring() converts it into string.
-                String userlname = etRegLname.getText().toString();
                 String userphone = etRegPhone.getText().toString();
                 String useremail = etRegEmail.getText().toString();
                 String userpass = etRegPass.getText().toString();

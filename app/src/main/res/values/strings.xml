@@ -5,8 +5,7 @@
         <string name="newuser">Not a registered user?</string>
         <string name="register_link">SignUp</string>
 
-        <string name="activity_register_fname">First Name</string>
-        <string name="activity_register_lname">Last Name</string>
+        <string name="activity_register_uname">User Name</string>
         <string name="activity_register_phone">Phone Number</string>
 
         <string name="registereduser">Registered Already?</string>

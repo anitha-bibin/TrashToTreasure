@@ -54,7 +54,7 @@ public class LaunchActivity extends AppCompatActivity {
 
         // GRID VIEW
         CustomGrid adapter = new CustomGrid(LaunchActivity.this, ItemNamesList, ItemImages);
-        grid =  findViewById(R.id.gridlist);
+        grid = findViewById(R.id.gridlist);
         grid.setAdapter(adapter);
 
 
@@ -63,11 +63,9 @@ public class LaunchActivity extends AppCompatActivity {
     public void donateLinkClick(View view) {
         Intent intent = new Intent(this, DonateItActivity.class);
         startActivity(intent);
-
     }
 
     public void signInLinkClick(View view) {
-
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
@@ -81,7 +79,7 @@ public class LaunchActivity extends AppCompatActivity {
         Intent i = new Intent(this, PreviewItemActivity.class);
         mDialog = findViewById(R.id.grid_text);
         int imgid = mDialog.getId();
-        String getrec=mDialog.getText().toString();
+        String getrec = mDialog.getText().toString();
 
 //Create the bundle
         Bundle bundle = new Bundle();
@@ -89,9 +87,9 @@ public class LaunchActivity extends AppCompatActivity {
         bundle.putString("imageid", getrec);
 
 //Add the bundle to the intent
-        Toast.makeText(LaunchActivity.this, "Toast displayed. You selected " + bundle +getrec, Toast.LENGTH_SHORT).show();
-       i.putExtras(bundle);
-       // i.putExtra("ImageDetails", getImage);
+        Toast.makeText(LaunchActivity.this, "Toast displayed. You selected " + bundle + getrec, Toast.LENGTH_SHORT).show();
+        i.putExtras(bundle);
+        // i.putExtra("ImageDetails", getImage);
 //go to the next activity
         startActivity(i);
     }
