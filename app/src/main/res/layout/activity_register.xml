@@ -71,6 +71,17 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="textPassword" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address" />
+
+        <EditText
+            android:id="@+id/etregaddr"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:inputType="text|textMultiLine"
+            android:maxLines="5" />
 
         <Button
             android:id="@+id/btn_register"

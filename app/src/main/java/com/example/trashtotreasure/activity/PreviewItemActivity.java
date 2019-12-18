@@ -1,6 +1,8 @@
 package com.example.trashtotreasure.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -18,6 +20,16 @@ public class PreviewItemActivity extends AppCompatActivity {
 //Extract the data…
         String stuff = bundle.getString("imageid");
 
-        Toast.makeText(PreviewItemActivity.this, "Toast displayed. Selected image id "+stuff , Toast.LENGTH_SHORT).show();
+       // Toast.makeText(PreviewItemActivity.this, "Toast displayed. Selected image id "+stuff , Toast.LENGTH_SHORT).show();
+    }
+    public void goHome(View view) {
+
+        Intent intent = new Intent(this, LaunchActivity.class);
+        startActivity(intent);
+    }
+    public void treasureIt(View view) {
+
+        Intent intent = new Intent(this, TreasureItActivity.class);
+        startActivity(intent);
     }
 }

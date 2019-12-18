@@ -69,6 +69,10 @@ public class LaunchActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
+    public void signUpLinkClick(View view) {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
+    }
 
 
     public void onItemClick(View view) {
@@ -87,7 +91,7 @@ public class LaunchActivity extends AppCompatActivity {
         bundle.putString("imageid", getrec);
 
 //Add the bundle to the intent
-        Toast.makeText(LaunchActivity.this, "Toast displayed. You selected " + bundle + getrec, Toast.LENGTH_SHORT).show();
+       // Toast.makeText(LaunchActivity.this, "Toast displayed. You selected " + bundle + getrec, Toast.LENGTH_SHORT).show();
         i.putExtras(bundle);
         // i.putExtra("ImageDetails", getImage);
 //go to the next activity

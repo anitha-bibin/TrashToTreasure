@@ -83,7 +83,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="loadpic"
-                android:text="Load Picture"></Button>
+                android:text="Load Picture"
+                android:background="@color/colorPrimary"></Button>
             <ImageView
                 android:id="@+id/imgView"
                 android:layout_width="fill_parent"
@@ -98,7 +99,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="addmyitem"
-            android:text="Add My Listing"></Button>
+            android:text="Add My Listing"
+            android:background="@color/colorPrimary"></Button>
 
     </LinearLayout>
 </RelativeLayout>

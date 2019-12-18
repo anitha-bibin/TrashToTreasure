@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.trashtotreasure">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -7,11 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
 
         <activity android:name=".activity.SplashActivity">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <!-- activity for login page -->
@@ -46,17 +52,14 @@
 
         <!-- view of the item i want to treasure  -->
 
-        <activity android:name=".activity.TreasureItActivity" />
+        <activity android:name=".activity.TreasureItActivity"
+            android:parentActivityName=".activity.LaunchActivity"/>
 
                <!-- my account activity  -->
 
         <activity android:name=".activity.MyAccountActivity"
             android:parentActivityName=".activity.LaunchActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
     </application>

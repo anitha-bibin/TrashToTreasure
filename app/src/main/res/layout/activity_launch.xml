@@ -17,8 +17,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
-            android:text="@string/registereduser" />
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="signUpLinkClick"
+            android:text="Register"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,27 +30,39 @@
             android:layout_marginLeft="10dp"
             android:clickable="true"
             android:onClick="signInLinkClick"
-            android:text="@string/login_link"
+            android:text="SignIn"
             android:textColor="@color/colorAccent"
             android:textStyle="italic" />
 
-       <!-- <androidx.coordinatorlayout.widget.CoordinatorLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+             android:text="Search here"
+            android:textStyle="italic" />
 
-            &lt;!&ndash; Main content &ndash;&gt;
+        <SearchView
+            android:layout_width="686dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floating_action_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|right"
-                android:layout_margin="16dp"
-                />
+        <!-- <androidx.coordinatorlayout.widget.CoordinatorLayout
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+             &lt;!&ndash; Main content &ndash;&gt;
+
+             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                 android:id="@+id/floating_action_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="bottom|right"
+                 android:layout_margin="16dp"
+                 />
+
+         </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
 
     </LinearLayout>
