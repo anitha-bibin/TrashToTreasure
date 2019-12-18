@@ -76,9 +76,6 @@ public class LaunchActivity extends AppCompatActivity {
 
 
     public void onItemClick(View view) {
-        /*Toast.makeText(LaunchActivity.this, "Toast displayed. You selected " , Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, PreviewItemActivity.class);
-        startActivity(intent);*/
 
         Intent i = new Intent(this, PreviewItemActivity.class);
         mDialog = findViewById(R.id.grid_text);
@@ -88,7 +85,7 @@ public class LaunchActivity extends AppCompatActivity {
 //Create the bundle
         Bundle bundle = new Bundle();
 //Add your data to bundle
-        bundle.putString("imageid", getrec);
+        bundle.putString("imageid", "12");
 
 //Add the bundle to the intent
        // Toast.makeText(LaunchActivity.this, "Toast displayed. You selected " + bundle + getrec, Toast.LENGTH_SHORT).show();

@@ -79,6 +79,19 @@
                 android:text="See other Items" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Other Items"
+                android:textSize="25dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

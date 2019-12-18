@@ -10,5 +10,29 @@
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Space for contacting the owner of the item" />
+        android:text="Contact owner for more info. Please mention your email and phone no." />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send message to the Owner" />
+
+
+    <EditText
+        android:id="@+id/contactowner"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:inputType="text|textMultiLine"
+        android:maxLines="20" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Send Message"
+        android:background="@color/colorPrimary"/>
+
 </LinearLayout>
