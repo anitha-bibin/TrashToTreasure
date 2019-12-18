@@ -89,6 +89,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
+            android:clickable="true"
             android:text="@string/activity_signup_btn" />
         <!-- layout inside layout. To show/arrange the text or items in one line -->
         <LinearLayout

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -84,6 +85,11 @@ public class DonateItActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+        public void addmyitem(View view) {
+            Toast.makeText(DonateItActivity.this, "New Listing Item Added", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, LaunchActivity.class);
+        startActivity(intent);
+    }
 
 
 }

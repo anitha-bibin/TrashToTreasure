@@ -6,17 +6,19 @@
     android:background="@color/greencolor"
     >
 
-    <EditText
-        android:id="@+id/editText3"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contact owner for more info. Please mention your email and phone no." />
+        android:text="Contact owner for more info.
+        Please mention your email and phone no."
+        android:textSize="20sp" android:textStyle="bold"/>
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send message to the Owner" />
+        android:text="Send message to the Owner"
+        android:paddingTop="20dp"/>
 
 
     <EditText
@@ -27,7 +29,7 @@
         android:maxLines="20" />
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_treasure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="15dp"
